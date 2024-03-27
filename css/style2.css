@@ -1,0 +1,142 @@
+/*Style CSS pour la page Silicon Valley*/
+@font-face {
+    font-family: 'PolicePersonnalisée';
+    src: url('PolicePerso.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(../img/FondSiliconValley.png) fixed;
+    background-size: cover;
+    min-width: 1665px;
+}
+#Titre{
+    font-family: 'PolicePersonnalisée';
+    font-size: xx-large;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: center;
+}
+#Menu{
+    width: 97%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    border: rgba(0, 0, 0, 0.5) solid 5px;
+    border-radius: 15px;
+}
+#logo{
+    padding-left: 1%;
+    padding-right: 17%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+}
+#logo img{
+    height: 40px;
+    width: 40px;
+    align-self: center;
+}
+#navigation{
+    width: 50%;
+    align-content: center;
+}
+#navigation ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;    
+}
+#Menu a{
+    font-family: 'PolicePersonnalisée';
+    font-size: large;
+    text-decoration: none;
+    color: white;
+}
+#Menu a:hover{
+    text-shadow: 2px 2px 2px purple;
+    color: rgb(158, 70, 217)
+}
+#contenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+h3{
+    text-align: center;
+    font-family: 'PolicePersonnalisée';
+    font-size: x-large;
+    color: whitesmoke;
+    text-shadow: 2px 2px 2px black;
+    margin-bottom: 5%;
+}
+a{
+    font-family: sans-serif
+}
+#Paragraphe{
+    width: 45%;
+    display: flex;
+    font-family: Trebuchet MS;
+    text-align: justify;
+    color: white;
+    font-size: 16pt;
+    margin-bottom: 4%;
+    padding: 2%;
+    text-shadow: 2px 2px 2px black;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 15px;
+}
+#SiliconPhoto{
+    width: 400px;
+}
+#Image{
+    background-color: rgba(245, 245, 245, 0.528);
+    border-radius: 5%;
+    margin-bottom: 2%;
+}
+#ListeFaits{
+    width: 49%;
+    font-family: Trebuchet MS;
+}
+#ListeFaits li{
+    font-size: larger;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    margin-left: 2%
+}
+#ListeFaits ul{
+    padding: 2%;
+    border-radius: 20px;
+    background-color: rgba(245, 245, 245, 0.5);
+}
+#pieddepage{
+    width: 95%;
+    background-color: white;
+    border-radius: 25px;
+}
+#pieddepage ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+/*#loading{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/

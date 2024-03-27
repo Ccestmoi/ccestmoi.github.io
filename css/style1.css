@@ -1,0 +1,186 @@
+/*Style CSS pour la page Entreprises*/
+@font-face {
+    font-family: 'PolicePersonnalisée';
+    src: url('PolicePerso.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TrebuchetMS';
+    src: url('TrebuchetMS.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 1665px;
+    background: url(../img/FondEntreprises.png) fixed center;
+    background-size: cover;
+}
+#Titre{
+    font-family: 'PolicePersonnalisée';
+    font-size: xx-large;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    display: flex;
+    justify-content: center;
+    text-shadow: 0px 0px 3px white;
+}
+#Menu{
+    width: 97%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    border: rgba(0, 0, 0, 0.5) solid 5px;
+    border-radius: 15px;
+}
+#logo{
+    padding-left: 1%;
+    padding-right: 17%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+}
+#logo img{
+    height: 40px;
+    width: 40px;
+    align-self: center;
+}
+#navigation{
+    width: 50%;
+    align-content: center;
+}
+#navigation ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;    
+}
+#Menu a{
+    font-family: 'PolicePersonnalisée';
+    font-size: large;
+    text-decoration: none;
+    color: white;
+}
+#Menu a:hover{
+    text-shadow: 2px 2px 2px purple;
+    color: rgb(158, 70, 217)
+}
+#contenu{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#Paragraphe{
+    width: 40%;
+    font-family: Trebuchet MS;
+    text-align: justify;
+    display: flex;
+    font-size: 18pt;
+    background-color: rgba(255, 255, 255, 0.703);
+    padding: 2%;
+    border-radius: 25px;
+    margin-bottom: 1%;
+}
+#pieddepage{
+    width: 95%;
+    background-color: whitesmoke;
+    border-radius: 25px;
+}
+#pieddepage ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+#liste{
+    background-color: rgba(255, 255, 255, 0.703);
+    padding: 2%;
+    border-radius: 25px;
+    margin-bottom: 4%;
+}
+#liste li{
+    font-family: Trebuchet MS;
+    font-size: 18pt;
+    text-shadow: 0px 0px 2px white;
+}
+#liste ul{
+    list-style-type: circle;
+}
+#hyperimage{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 4%;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.673);
+}
+#hyperimage img{
+    height: 192px;
+}
+#haut{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#mhaut{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#milieu{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#mbas{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#bas{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*#loading{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+#diaporama{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 4%;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.673);
+}
+#diaporama img{
+    height: 300px;
+}
