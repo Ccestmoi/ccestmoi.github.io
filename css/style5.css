@@ -1,0 +1,111 @@
+/* Style CSS pour la page d'inscription */
+@font-face {
+    font-family: 'PolicePersonnalisée';
+    src: url('PolicePerso.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 1665px;
+    background: url('../img/Mosaic_Black.png') fixed;
+    background-size: cover;
+}
+#Menu{
+    width: 97%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+    border: rgba(116, 116, 116, 0.251) solid 5px;
+    border-radius: 15px;
+}
+
+#logo{
+    padding-left: 1%;
+    padding-right: 17%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+}
+
+#logo img{
+    height: 40px;
+    width: 40px;
+    align-self: center;
+}
+
+#inscription img{
+    height: 40px;
+    width: 40px;
+    align-self: center;
+}
+
+#inscription{
+    padding-right: 1%;
+    padding-left: 27%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+}
+
+#navigation{
+    width: 50%;
+    align-content: center;
+}
+
+#navigation ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;    
+}
+
+#Menu a{
+    font-family: 'PolicePersonnalisée';
+    font-size: large;
+    text-decoration: none;
+    color: white;
+}
+
+#Menu a:hover{
+    text-shadow: 2px 2px 2px rgb(255, 255, 255);
+    color: rgb(213, 213, 213)
+}
+
+#BoutonTheme{
+    padding-left: 27%;
+    padding-right: 1%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+}
+
+#Formulaire{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+#Formulaire label{
+    font-family: 'PolicePersonnalisée';
+    font-size: large;
+    color: white;
+}
+
+#Titre{
+    font-family: 'PolicePersonnalisée';
+    font-size: xx-large;
+    color: white;
+    text-align: center;
+    margin-top: 2%;
+}
