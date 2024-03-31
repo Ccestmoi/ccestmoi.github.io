@@ -1,25 +1,6 @@
 /* Déclaration du thème par défaut */
 let mode = 'dark'
 
-window.addEventListener('load', function(){
-    let loading = document.getElementById('loading');
-    let menu = document.getElementById('Menu');
-    let contenu = document.getElementById('contenu');
-    let footer = document.getElementById('pieddepage');
-
-    if(loading){
-        loading.style.display = 'flex';
-        menu.style.display = 'none';
-        contenu.style.display = 'none';
-        footer.style.display = 'none';
-    }else{
-        loading.style.display = 'none';
-        menu.style.display = 'flex';
-        contenu.style.display = 'flex';
-        footer.style.display = 'flex';
-    }
-});
-
 /* JS pour le theme sombre et clair */
 
 function lightdark(){
