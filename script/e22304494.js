@@ -1,13 +1,24 @@
 /* Déclaration du thème par défaut */
 let mode = 'dark'
 
-/*
 window.addEventListener('load', function(){
     let loading = document.getElementById('loading');
+    let menu = document.getElementById('Menu');
+    let contenu = document.getElementById('contenu');
+    let footer = document.getElementById('pieddepage');
+
     if(loading){
         loading.style.display = 'flex';
+        menu.style.display = 'none';
+        contenu.style.display = 'none';
+        footer.style.display = 'none';
+    }else{
+        loading.style.display = 'none';
+        menu.style.display = 'flex';
+        contenu.style.display = 'flex';
+        footer.style.display = 'flex';
     }
-});*/
+});
 
 /* JS pour le theme sombre et clair */
 
@@ -28,8 +39,8 @@ function lightdark(){
     /* Changement de thème */
     if (mode == 'dark'){
         button.value = 'light';
-        button.src = '../img/sun.max.fill.svg'
         if (window.location.pathname.endsWith('Apropos.html')){
+            button.src = '../img/sun.max.fill.svg'
             document.body.style.backgroundImage = "url(../img/FondApropos_light.png)";
             bordure.style.boxShadow = "0px 0px 15px #000000";
             bordure.style.borderColor = "rgba(195, 209, 220)";
@@ -37,6 +48,7 @@ function lightdark(){
             for(let i = 0; i < labels.length; i++){
                 labels[i].style.color = "black";
             }
+            button.src = '../img/sun.max.fill.white.svg'
             logo.src = "../img/LogoSiteWeb_white.png";
             document.body.style.backgroundImage = "url(../img/Mosaic_White.png)";
             bordure.style.borderColor = "rgba(0, 0, 0, 0.5)";
@@ -45,8 +57,8 @@ function lightdark(){
         }
     } else {
         button.value = 'dark';
-        button.src = '../img/moon.fill.svg'
         if (window.location.pathname.endsWith('Apropos.html')){
+            button.src = '../img/moon.fill.svg'
             document.body.style.backgroundImage = "url(../img/FondApropos.png)";
             bordure.style.boxShadow = "0px 0px 15px #F2F29E";
             bordure.style.borderColor = "rgba(255, 255, 220, 0.368)";
@@ -54,6 +66,7 @@ function lightdark(){
             for(let i = 0; i < labels.length; i++){
                 labels[i].style.color = "white";
             }
+            button.src = '../img/moon.fill.black.svg'
             logo.src = "../img/LogoSiteWeb_dark.png";
             document.body.style.backgroundImage = "url(../img/Mosaic_Black.png)";
             bordure.style.borderColor = "rgba(116, 116, 116, 0.251)";
