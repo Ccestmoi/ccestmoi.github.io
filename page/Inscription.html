@@ -40,16 +40,35 @@
 
             <div id="Formulaire">
                 <form action="page/Inscription.html" method="post">
+
                     <label for="nom">Nom :</label>
                     <input type="text" id="nom" name="nom" required><br><br>
+
                     <label for="prenom">Prénom :</label>
                     <input type="text" id="prenom" name="prenom" required><br><br>
+
+                    <label for="age">Age :</label>
+                    <input type="number" id="age" name="age" required><br><br>
+
+                    <label for="sexe">Sexe :</label>
+                    <input type="radio" id="sexe" name="sexe" value="Homme" required>
+                    <label for="homme">Homme</label>
+                    <input type="radio" id="sexe" name="sexe" value="Femme" required>
+                    <label for="femme">Femme</label><br><br>
+
+                    <label for="numero">Numéro de Téléphone :</label>
+                    <input type="tel" id="numero" name="numero" required><br><br>
+
                     <label for="email">Email :</label>
                     <input type="email" id="email" name="email" required><br><br>
-                    <label for="mdp">Mot de passe :</label>
-                    <input type="password" id="mdp" name="mdp" required><br><br>
-                    <input type="submit" value="S'inscrire">
+
+                    <input type="submit" value="S'inscrire" onclick="Validation()">
+                    <input type="submit" value="Effacer" onclick="Clear()">
                 </form>
+            </div>
+
+            <div id="OK">
+                <img src="../img/ok-okay.gif" id="ok" alt="ok">
             </div>
     </body>
 

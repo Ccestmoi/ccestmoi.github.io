@@ -183,3 +183,95 @@ if (window.location.pathname.endsWith('Apropos.html')){
 
 /* Formulaire d'inscription */
 
+function Validation(){
+    /* Récupération des valeurs des champs */
+
+    let nom = document.getElementById('nom').value;
+    let prenom = document.getElementById('prenom').value;
+    let annee = document.getElementById('age').value;
+    let sexe = document.getElementById('sexe').value;
+    let numero = document.getElementById('numero').value;
+    let mail = document.getElementById('email').value;
+
+    /* Définition des expressions régulières */
+    let regexp = /^[A-Za-z]+$/;
+    let regexp2 = /^[0-9]+$/;
+    let regexp3 = /^\w+[\+\.\w-]*@([\w-]+\.)*\w+[\w-]*\.([a-z]{2,4}|\d+)$/i
+
+    let message = "";
+
+    /* Vérification des champs */
+
+    if (nom == ""){
+        message += "- Veuillez saisir votre nom\n";
+    }
+
+    if (!regexp.test(nom)){
+        message += "- Le nom doit contenir uniquement des caractères alphabétiques\n";
+    }
+    
+    if (prenom == ""){
+        message += "- Veuillez saisir votre prénom\n";
+    }
+
+    if (!regexp.test(prenom)){
+        message += "- Le prénom doit contenir uniquement des caractères alphabétiques\n";
+    }
+
+    if (annee == ""){
+        message += "- Veuillez saisir votre année de naissance\n";
+    }
+
+    if (!regexp2.test(annee)){
+        message += "- L'année de naissance doit contenir uniquement des chiffres\n";
+    }
+
+    if (annee > 2005){
+        message += "- Vous devez être majeur pour vous inscrire\n";
+    }
+
+    if (sexe == ""){
+        message += "- Veuillez saisir votre sexe\n";
+    }
+
+    if (numero == ""){
+        message += "- Veuillez saisir votre numéro de téléphone\n";
+    }
+
+    if (!regexp2.test(numero)){
+        message += "- Le numéro de téléphone doit contenir uniquement des chiffres\n";
+    }
+
+    if(numero.length != 10){
+        message += "- Le numéro de téléphone doit contenir 10 chiffres\n";
+    }
+
+    if (mail == ""){
+        message += "- Veuillez saisir votre adresse mail\n";
+    }
+
+    if (!regexp3.test(mail)){
+        message += "- L'adresse mail n'est pas valide\n";
+    }
+    
+    if (message != ""){
+        alert(message);
+    } else {
+        Clear();
+        document.getElementById('Formulaire').style.display = 'none';
+        document.getElementById('OK').style.display = 'flex';
+        setTimeout(function(){
+            document.getElementById('Formulaire').style.display = 'flex';
+            document.getElementById('OK').style.display = 'none';
+        }, 2000);
+    }
+}
+
+function Clear(){
+    document.getElementById('nom').value = "";
+    document.getElementById('prenom').value = "";
+    document.getElementById('age').value = "";
+    document.getElementById('sexe').checked = false;
+    document.getElementById('numero').value = "";
+    document.getElementById('email').value = "";
+}
