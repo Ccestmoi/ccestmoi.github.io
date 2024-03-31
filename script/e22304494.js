@@ -12,15 +12,20 @@ window.addEventListener('load', function(){
 /* JS pour le theme sombre et clair */
 
 function lightdark(){
+    /* Récuprération des éléments à modifier */
     let button = document.getElementById('darklight');
     let mode = button.value;
     let bordure = document.getElementById('Menu');
     let labels = document.getElementsByTagName('label');
     let titre = document.getElementById('Titre');
+    let logo = document.getElementById('Logo');
+
+    /* Animation de transition */
     bordure.style.transition = "box-shadow 1s ease-in-out";
     bordure.style.transition = "border-color 1s ease-in-out";
     document.body.style.transition = "background-image 1s ease-in-out";
 
+    /* Changement de thème */
     if (mode == 'dark'){
         button.value = 'light';
         button.src = '../img/sun.max.fill.svg'
@@ -32,6 +37,7 @@ function lightdark(){
             for(let i = 0; i < labels.length; i++){
                 labels[i].style.color = "black";
             }
+            logo.src = "../img/LogoSiteWeb_white.png";
             document.body.style.backgroundImage = "url(../img/Mosaic_White.png)";
             bordure.style.borderColor = "rgba(0, 0, 0, 0.5)";
             bordure.style.backgroundColor = "rgba(0, 0, 0, 0.75)";
@@ -48,6 +54,7 @@ function lightdark(){
             for(let i = 0; i < labels.length; i++){
                 labels[i].style.color = "white";
             }
+            logo.src = "../img/LogoSiteWeb_dark.png";
             document.body.style.backgroundImage = "url(../img/Mosaic_Black.png)";
             bordure.style.borderColor = "rgba(116, 116, 116, 0.251)";
             bordure.style.backgroundColor = "rgba(0, 0, 0, 0.0)";
@@ -135,8 +142,44 @@ if (window.location.pathname.endsWith('Entreprises.html')){
 }
 /* Animation Pacman */
 
-function Animation(){
-    let pacman = document.getElementById('pacman');
-    let position = 0;
+if (window.location.pathname.endsWith('Apropos.html')){
+    Animate();
+
+    let positionpac = 0;
+    let positionghosts = -0;
+    let aller = true;
+
+    function Animate() {
+        let mouvement = setInterval(move, 5);
+    }
+
+    function move() {
+        let pacman = document.getElementById('Pacman');
+        let pac = document.getElementById('Pac');
+        let ghost = document.getElementById('Ghost');
+        let largeur = window.innerWidth;
+
+        if (positionpac == largeur + 200){
+            aller = false;
+        } 
     
+        if (positionpac == -200){
+            aller = true;
+        }
+
+        if (aller){
+            positionpac += 1;
+            pacman.style.left = positionpac + 'px';
+            pac.src = "../img/pacman_chased.gif";
+            ghost.src = "../img/ghosts_chasing.gif";
+        } else {
+            positionpac -= 1;
+            pacman.style.left = positionpac + 'px';
+            pac.src = "../img/pacman_chasing.gif";
+            ghost.src = "../img/ghosts_chased.gif";
+        }
+    }
 }
+
+/* Formulaire d'inscription */
+
