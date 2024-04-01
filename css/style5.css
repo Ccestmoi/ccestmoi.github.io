@@ -112,4 +112,17 @@ body {
 
 #OK{
     display: none;
+    justify-content: center;
+}
+
+#affichage{
+    margin-top: 2%;
+    display: none;
+    flex-direction: column;
+    color: white;
+}
+
+#affichage p{
+    font-family: 'TrebuchetMS';
+    font-size: large;
 }

@@ -35,6 +35,7 @@ function lightdark(){
             bordure.style.borderColor = "rgba(0, 0, 0, 0.5)";
             bordure.style.backgroundColor = "rgba(0, 0, 0, 0.75)";
             titre.style.color = "black";
+            document.getElementById('affichage').style.color = "black";
         }
     } else {
         button.value = 'dark';
@@ -53,6 +54,7 @@ function lightdark(){
             bordure.style.borderColor = "rgba(116, 116, 116, 0.251)";
             bordure.style.backgroundColor = "rgba(0, 0, 0, 0.0)";
             titre.style.color = "white";
+            document.getElementById('affichage').style.color = "white";
         }
     }
 }
@@ -78,10 +80,20 @@ if (window.location.pathname.endsWith('Culture.html')){
     '../img/Intel_Museum.png'
     ];
 
+    var descriptions = [
+    "<strong>La Mission Santa Clara de Asís</strong> est un important site historique et culturel de la ville. La mission est ouverte au public.",
+    "<strong>Le Musée de Saisset</strong>  est un musée d'art qui présente une collection d'art californien et européen, anciens et modernes.",
+    "<strong>Le Levi's Stadium</strong> est un stade de football américain qui accueille les matchs à domicile des 49ers de San Francisco. Le stade est également utilisé pour des concerts et d'autres événements.",
+    "<strong>Le California's Great America</strong> est un parc d'attractions qui propose des montagnes russes, des manèges et d'autres attractions.",
+    "<strong>Le musée Intel</strong> est un musée située au siège d'Intel où les produits, l'histoire d'Intel et l'histoire de la technologie du semi-conducteur sont exposés."
+    ];
+
     var indexCourant = 0;
 
     function afficherGrandeImage(index) {
     var grandeImage = document.getElementById('grandeImage');
+    var description = document.getElementById('description');
+    description.innerHTML = descriptions[index];
     grandeImage.src = images[index];
     indexCourant = index;
     }
@@ -220,7 +232,7 @@ function Validation(){
         message += "- L'année de naissance doit contenir uniquement des chiffres\n";
     }
 
-    if (annee > 2005){
+    if (annee < 18){
         message += "- Vous devez être majeur pour vous inscrire\n";
     }
 
@@ -251,12 +263,32 @@ function Validation(){
     if (message != ""){
         alert(message);
     } else {
+        var renom = document.getElementById('nom').value;
+        var reprenom = document.getElementById('prenom').value;
+        var reannee = document.getElementById('age').value;
+        var resexe = document.getElementById('sexe').value;
+        var renumero = document.getElementById('numero').value;
+        var remail = document.getElementById('email').value;
+
+        var texte = "<p>" + "Nom : " + renom + "<br>" +
+                    "Prénom : " + reprenom + "<br>" +
+                    "Année de naissance : " + reannee + "<br>" +
+                    "Sexe : " + resexe + "<br>" +
+                    "Numéro de téléphone : " + renumero + "<br>" +
+                    "Adresse mail : " + remail + "<br>" +
+                    "Votre inscription a bien été prise en compte !" +
+                    "<p>" + 
+                    "<button id=donnees onclick=Reset()>Effacer l'affichage</button>";
+        
+        document.getElementById('affichage').innerHTML = texte;
+
         Clear();
         document.getElementById('Formulaire').style.display = 'none';
         document.getElementById('OK').style.display = 'flex';
         setTimeout(function(){
             document.getElementById('Formulaire').style.display = 'flex';
             document.getElementById('OK').style.display = 'none';
+            document.getElementById('affichage').style.display = 'flex';
         }, 2000);
     }
 }
@@ -268,4 +300,9 @@ function Clear(){
     document.getElementById('sexe').checked = false;
     document.getElementById('numero').value = "";
     document.getElementById('email').value = "";
+}
+
+function Reset(){
+    document.getElementById('affichage').innerHTML = "";
+    document.getElementById('affichage').style.display = 'none';
 }

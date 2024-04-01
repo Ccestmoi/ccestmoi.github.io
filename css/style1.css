@@ -152,17 +152,7 @@ body {
     justify-content: center;
     align-items: center;
 }
-/*#loading{
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: rgba(255, 255, 255, 0.8);
-}*/
+
 #diaporama{
     width: 50%;
     height: 100%;
