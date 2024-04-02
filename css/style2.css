@@ -5,6 +5,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 body {
     width: 100%;
     display: flex;
@@ -12,8 +13,9 @@ body {
     align-items: center;
     background: url(../img/FondSiliconValley.png) fixed;
     background-size: cover;
-    min-width: 1665px;
+    min-width: 1440px;
 }
+
 #Titre{
     font-family: 'PolicePersonnalisée';
     font-size: xx-large;
@@ -22,48 +24,66 @@ body {
     display: flex;
     justify-content: center;
 }
+
 #Menu{
     width: 97%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.75);
     border: rgba(0, 0, 0, 0.5) solid 5px;
     border-radius: 15px;
 }
+
 #logo{
     padding-left: 1%;
-    padding-right: 17%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-items: center;
 }
+
 #logo img{
     height: 40px;
     width: 40px;
     align-self: center;
 }
+
 #navigation{
-    width: 50%;
+    width: 74%;
     align-content: center;
 }
+
 #navigation ul{
     list-style-type: none;
     display: flex;
     justify-content: space-around;    
+    flex-wrap: nowrap;
 }
+
+#invisible{
+    padding-right: 1%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    height: 40px;
+    width: 40px;
+}
+
 #Menu a{
     font-family: 'PolicePersonnalisée';
     font-size: large;
     text-decoration: none;
     color: white;
 }
+
 #Menu a:hover{
     text-shadow: 2px 2px 2px purple;
     color: rgb(158, 70, 217)
 }
+
 #contenu{
     display: flex;
     flex-direction: column;
@@ -95,34 +115,41 @@ a{
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 15px;
 }
+
 #SiliconPhoto{
     width: 400px;
 }
+
 #Image{
     background-color: rgba(245, 245, 245, 0.528);
     border-radius: 5%;
     margin-bottom: 2%;
 }
+
 #ListeFaits{
     width: 49%;
     font-family: Trebuchet MS;
 }
+
 #ListeFaits li{
     font-size: larger;
     color: white;
     text-shadow: 2px 2px 2px black;
     margin-left: 2%
 }
+
 #ListeFaits ul{
     padding: 2%;
     border-radius: 20px;
     background-color: rgba(245, 245, 245, 0.5);
 }
+
 #pieddepage{
     width: 95%;
     background-color: white;
     border-radius: 25px;
 }
+
 #pieddepage ul{
     list-style-type: none;
     display: flex;

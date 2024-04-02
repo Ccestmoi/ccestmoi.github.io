@@ -20,7 +20,7 @@ body {
     align-items: center;
     background: url(../img/FondIndex.png) fixed;
     background-size: cover;
-    min-width: 1665px;
+    min-width: 1440px;
 }
 
 #Titre{
@@ -36,7 +36,7 @@ body {
     width: 97%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.75);
     border: rgba(0, 0, 0, 0.5) solid 5px;
@@ -45,7 +45,6 @@ body {
 
 #logo{
     padding-left: 1%;
-    padding-right: 17%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -66,7 +65,6 @@ body {
 
 #inscription{
     padding-right: 1%;
-    padding-left: 27%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -74,14 +72,15 @@ body {
 }
 
 #navigation{
-    width: 50%;
+    width: 74%;
     align-content: center;
 }
 
 #navigation ul{
     list-style-type: none;
     display: flex;
-    justify-content: space-around;    
+    justify-content: space-around;   
+    flex-wrap: nowrap; 
 }
 
 #Menu a{
