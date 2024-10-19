@@ -1,0 +1,39 @@
+a{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    text-decoration: none;
+}
+#L1:hover, #L2:hover{
+    color: #f00;
+}
+#liens{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 15dvh;
+}
+#L1, #L2 {
+    width: 20dvh;
+    height: 20dvh;
+    background-color: rgba(230, 125, 1, 0.5); /* ou #0f0 pour #L2 */
+    color: #fff;
+    padding: 10px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+}
+body{
+    align-items: center;
+    background: url(RanchoTwilight.png) fixed;
+    background-size: cover;
+}
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: xx-large;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 2px #000;
+}
