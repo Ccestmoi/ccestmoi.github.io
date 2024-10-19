@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="descrition" content="Mon Projet">
+        <meta charset="UTF-8">
+        <title>Santa Clara</title>
+        <link rel="stylesheet" type="text/css" href="../css/style3.css"></link>
+        <script src="../script/script.js"></script>
+    </head>
+
+    <body>
+
+        <div id="Menu">
+
+            <div id="logo">
+                <a href="../index.html"><img src="../img/LogoSiteWeb.png" alt="Logo" width="20px"></a>
+            </div>
+
+            <div id="navigation">
+                <ul>
+                    <li><a href="../index.html">La ville</a></li>
+                    <li><a href="../page/Entreprises.html">Entreprises</a></li>
+                    <li><a href="../page/Silicon.html">Silicon Valley</a></li>
+                    <li><a href="../page/Culture.html">Culture</a></li>
+                    <li><a href="../page/Apropos.html">À propos</a></li>
+                </ul>
+            </div>
+
+            <!--Division transparente remplaçant la division inscription de la page d'accueil-->
+            <div id="invisible">
+            </div>
+            
+        </div>
+
+        <div id="contenu">
+
+            <div id="Titre">
+                <h1>La Culture</h1>
+            </div>
+
+            <div id="Paragraphe">
+                <p>
+                La culture à Santa Clara, en Californie, 
+                est à la fois diversifiée et dynamique. 
+                La ville abrite une population d'origines ethniques et raciales variées, 
+                ce qui se reflète dans son offre culturelle. <br>
+                La culture traditionnelle de Santa Clara est fortement influencée par ses racines espagnoles. 
+                La ville abrite la Mission Santa Clara de Asís, une mission franciscaine fondée en 1777. <br>
+                La mission est un important site historique et culturel, 
+                et elle accueille des événements et des programmes culturels tout au long de l'année. <br>
+                La culture moderne de Santa Clara est dominée par l'industrie de la technologie. 
+                Cette diversité se reflète dans la scène artistique et culturelle de la ville. <br>
+                Santa Clara offre une variété de possibilités culturelles pour ses habitants et ses visiteurs. 
+                La ville abrite des théâtres, des musées, des galeries d'art, des salles de concert, 
+                des bibliothèques et des centres culturels.
+                </p>
+            </div>
+
+            <div id="faits">
+
+                <h3>Le tourisme à Santa Clara</h3>
+
+                <p>
+                À Santa Clara, le tourisme est un secteur important, voici quelques faits :
+                </p>
+
+                <ol>
+                    <li>La ville a accueilli 10 millions de visiteurs en 2023, 
+                        soit une augmentation de 15% par rapport à 2022.</li>
+                    <li>Le tourisme représente 2,5 milliards de dollars de revenus annuels et 
+                        emploie plus de 15 000 personnes.</li>
+                    <li>
+                        Les visiteurs venus des États-Unis et du monde entier dépensent en moyenne 250$ par jour.
+                    </li>
+                </ol>
+            </div>
+
+            <div id="album">
+
+                <h3>Voici quelques activités à faire dans la ville :</h3>
+
+                <img id="grandeImage" src="../img/Santa Clara de Asis.jpeg" alt="Image">
+
+                <p id="description"><strong>La Mission Santa Clara de Asís</strong> est un important site historique et culturel de la ville. 
+                    La mission est ouverte au public.</p>
+
+                <div id="controles">
+                    <img src="../img/backward.fill.svg" width="40px" onclick="previous()">
+                    <div id="miniatures">
+                        <img src="../img/Santa Clara de Asis.jpeg" alt="Santa Clara De Asis" onclick="afficherGrandeImage(0)">
+                        <img src="../img/DeSaissetMuseum.png" alt="Musée de Saisset" onclick="afficherGrandeImage(1)">
+                        <img src="../img/Levis_Stadium.png" alt="Levi's Stadium" onclick="afficherGrandeImage(2)">
+                        <img src="../img/CaliforniasGreatAmerica.png" alt="California's Great America" onclick="afficherGrandeImage(3)">
+                        <img src="../img/Intel_Museum.png" alt="Musée Intel" onclick="afficherGrandeImage(4)">
+                    </div>
+                    <img src="../img/forward.fill.svg" width="40px" onclick="next()">
+                </div>
+            </div>
+            
+            <div id="liens">
+                <a href="https://www.santaclaraca.gov/recreation-community/visit-santa-clara">Site WEB de la ville pour les visiteurs</a>
+
+                <div id="pdf">
+                    Calendrier des évènements :<a href="../data/Calendrier-evenements-Novembre-Decembre-2023.pdf" target="_blank">(PDF)</a>
+                </div>
+             </div>
+        </div>
+
+        <div id="calculatrice">
+            <input type="text" id="valeur" placeholder="Entrez une valeur"/>
+            <input type="text" id="pourcentage" placeholder="Entrez un pourcentage"/>
+            <input type="button" onclick="pourcentage()" value="Calcul de la valeur">
+        </div>
+
+        <div id="pieddepage">
+            <ul>
+                <li><a href="https://github.com/Ccestmoi" target="_blank"><img src="../img/github-mark.svg" alt="Github" width="20px"></a></li>
+            </ul>
+        </div>
+    </body>
+</html>

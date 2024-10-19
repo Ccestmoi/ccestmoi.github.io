@@ -1,0 +1,127 @@
+/* Style CSS pour la page d'inscription */
+@font-face {
+    font-family: 'PolicePersonnalisée';
+    src: url('PolicePerso.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 1440px;
+    background: url('../img/Mosaic_Black.png') fixed;
+    background-size: cover;
+}
+
+#Menu{
+    width: 97%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+    border: rgba(116, 116, 116, 0.251) solid 5px;
+    border-radius: 15px;
+}
+
+#logo{
+    padding-left: 1%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+}
+
+#logo img{
+    height: 40px;
+    width: 40px;
+    align-self: center;
+}
+
+#inscription img{
+    height: 40px;
+    width: 40px;
+    align-self: center;
+}
+
+#inscription{
+    padding-right: 1%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+}
+
+#navigation{
+    width: 74%;
+    align-content: center;
+}
+
+#navigation ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: nowrap;   
+}
+
+#Menu a{
+    font-family: 'PolicePersonnalisée';
+    font-size: large;
+    text-decoration: none;
+    color: white;
+}
+
+#Menu a:hover{
+    text-shadow: 2px 2px 2px rgb(255, 255, 255);
+    color: rgb(213, 213, 213)
+}
+
+#BoutonTheme{
+    padding-right: 1%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+}
+
+#Formulaire{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+#Formulaire label{
+    font-family: 'PolicePersonnalisée';
+    font-size: large;
+    color: white;
+}
+
+#Titre{
+    font-family: 'PolicePersonnalisée';
+    font-size: xx-large;
+    color: white;
+    text-align: center;
+    margin-top: 2%;
+}
+
+#OK{
+    display: none;
+    justify-content: center;
+}
+
+#affichage{
+    margin-top: 2%;
+    display: none;
+    flex-direction: column;
+    color: white;
+}
+
+#affichage p{
+    font-family: 'TrebuchetMS';
+    font-size: large;
+}
