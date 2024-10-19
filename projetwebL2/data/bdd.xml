@@ -39,4 +39,95 @@
         <point>2</point>
         <explication>En France, à chaque kWh d'électricité généré seulement 52g de CO2 sont relachés dans l'atmosphère.</explication>
     </question>
+    <question>
+        <id>4</id>
+        <img></img>
+        <contenu>Quel pourcentage des émissions mondiales de CO2 provient de la déforestation ?</contenu>
+        <choix>1</choix>
+        <reponse1>10%</reponse1>
+        <reponse2>15%</reponse2>
+        <reponse3>20%</reponse3>
+        <reponse4>25%</reponse4>
+        <bonnereponse>2</bonnereponse>
+        <point>1</point>
+        <explication>La déforestation est responsable de 15% des émissions mondiales de CO2.</explication>
+    </question>
+    <question>
+        <id>5</id>
+        <img></img>
+        <contenu>Quel est le principal gaz à effet de serre émis par les activités humaines ?</contenu>
+        <choix>1</choix>
+        <reponse1>Méthane</reponse1>
+        <reponse2>Oxyde nitreux</reponse2>
+        <reponse3>Vapeur d'eau</reponse3>
+        <reponse4>CO2</reponse4>
+        <bonnereponse>4</bonnereponse>
+        <point>1</point>
+        <explication>Le CO2 est le principal gaz à effet de serre émis par les activités humaines.</explication>
+    </question>
+    <question>
+        <id>6</id>
+        <img></img>
+        <contenu>Quel est le pourcentage de la surface terrestre couverte par les forêts ?</contenu>
+        <choix>1</choix>
+        <reponse1>31%</reponse1>
+        <reponse2>21%</reponse2>
+        <reponse3>41%</reponse3>
+        <reponse4>51%</reponse4>
+        <bonnereponse>1</bonnereponse>
+        <point>1</point>
+        <explication>Les forêts couvrent environ 31% de la surface terrestre.</explication>
+    </question>
+    <question>
+        <id>7</id>
+        <img></img>
+        <contenu>Quel pays est le plus grand émetteur de CO2 au monde ?</contenu>
+        <choix>1</choix>
+        <reponse1>États-Unis</reponse1>
+        <reponse2>Inde</reponse2>
+        <reponse3>Chine</reponse3>
+        <reponse4>Russie</reponse4>
+        <bonnereponse>3</bonnereponse>
+        <point>1</point>
+        <explication>La Chine est le plus grand émetteur de CO2 au monde.</explication>
+    </question>
+    <question>
+        <id>8</id>
+        <img></img>
+        <contenu>Quel est le principal contributeur à la pollution plastique des océans ?</contenu>
+        <choix>1</choix>
+        <reponse1>Sacs en plastique</reponse1>
+        <reponse2>Bouteilles en plastique</reponse2>
+        <reponse3>Microplastiques</reponse3>
+        <reponse4>Emballages alimentaires</reponse4>
+        <bonnereponse>3</bonnereponse>
+        <point>1</point>
+        <explication>Les microplastiques sont le principal contributeur à la pollution plastique des océans.</explication>
+    </question>
+    <question>
+        <id>9</id>
+        <img></img>
+        <contenu>Quel est l'impact principal de l'acidification des océans ?</contenu>
+        <choix>1</choix>
+        <reponse1>Blanchiment des coraux</reponse1>
+        <reponse2>Augmentation des tempêtes</reponse2>
+        <reponse3>Élévation du niveau de la mer</reponse3>
+        <reponse4>Réduction de la biodiversité marine</reponse4>
+        <bonnereponse>1</bonnereponse>
+        <point>1</point>
+        <explication>L'acidification des océans cause principalement le blanchiment des coraux.</explication>
+    </question>
+    <question>
+        <id>10</id>
+        <img></img>
+        <contenu>Quel est le principal effet du réchauffement climatique sur les calottes glaciaires ?</contenu>
+        <choix>1</choix>
+        <reponse1>Augmentation de la surface</reponse1>
+        <reponse2>Réduction de la surface</reponse2>
+        <reponse3>Stabilisation de la surface</reponse3>
+        <reponse4>Aucune modification</reponse4>
+        <bonnereponse>2</bonnereponse>
+        <point>1</point>
+        <explication>Le réchauffement climatique entraîne une réduction de la surface des calottes glaciaires.</explication>
+    </question>
 </data>

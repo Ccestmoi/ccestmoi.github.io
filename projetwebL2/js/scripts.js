@@ -6,7 +6,7 @@ function loadXMLDoc() {
             fetchData();
         }
     };
-    xmlhttp.open("GET", "https://obiwan.univ-brest.fr/~e22304494/data/bdd.xml", true);
+    xmlhttp.open("GET", "https://delightful-pond-089795303.4.azurestaticapps.net/projetwebL2/data/bdd.xml", true);
     xmlhttp.send();
 }
 
