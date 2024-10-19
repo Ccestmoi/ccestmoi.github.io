@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <question>
+        <id>1</id>
+        <img></img>
+        <contenu>Quel est la proportion de CO2 générée par l'informatique dans le monde actuellement ?</contenu>
+        <choix>1</choix>
+        <reponse1>10%</reponse1>
+        <reponse2>30%</reponse2>
+        <reponse3>4%</reponse3>
+        <reponse4>1%</reponse4>
+        <bonnereponse>3</bonnereponse>
+        <point>1</point>
+        <explication>La part de CO2 dans le monde lié à l'informatique mondial est de 4%</explication>
+    </question>
+    <question>
+        <id>2</id>
+        <img></img>
+        <contenu>Quel est la proportion de CO2 générée par l'activité aérienne dans le monde actuellement ?</contenu>
+        <choix>1</choix>
+        <reponse1>5%</reponse1>
+        <reponse2>17%</reponse2>
+        <reponse3>10%</reponse3>
+        <reponse4>2,5%</reponse4>
+        <bonnereponse>1</bonnereponse>
+        <point>2</point>
+        <explication>La part de CO2 dans le monde lié à l'aérien mondial est de 5%</explication>
+    </question>
+    <question>
+        <id>3</id>
+        <img></img>
+        <contenu>En France, quelle est la part de CO2/kWh d'électricité généré ?</contenu>
+        <choix>1</choix>
+        <reponse1>500g</reponse1>
+        <reponse2>210g</reponse2>
+        <reponse3>1kg</reponse3>
+        <reponse4>52g</reponse4>
+        <bonnereponse>4</bonnereponse>
+        <point>2</point>
+        <explication>En France, à chaque kWh d'électricité généré seulement 52g de CO2 sont relachés dans l'atmosphère.</explication>
+    </question>
+</data>
