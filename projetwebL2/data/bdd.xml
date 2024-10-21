@@ -3,6 +3,7 @@
     <question>
         <id>1</id>
         <theme>numerique</theme>
+        <niveau>moyen</niveau>
         <img></img>
         <contenu>Quel est la proportion de CO2 générée par l'informatique dans le monde actuellement ?</contenu>
         <choix>1</choix>
@@ -17,6 +18,7 @@
     <question>
         <id>2</id>
         <theme>transport</theme>
+        <niveau>facile</niveau>
         <img></img>
         <contenu>Quel est la proportion de CO2 générée par l'activité aérienne dans le monde actuellement ?</contenu>
         <choix>1</choix>
@@ -31,6 +33,7 @@
     <question>
         <id>3</id>
         <theme>energie</theme>
+        <niveau>moyen</niveau>
         <img></img>
         <contenu>En France, quelle est la part de CO2/kWh d'électricité généré ?</contenu>
         <choix>1</choix>
@@ -40,11 +43,12 @@
         <reponse4>52g</reponse4>
         <bonnereponse>4</bonnereponse>
         <point>2</point>
-        <explication>En France, à chaque kWh d'électricité généré seulement 52g de CO2 sont relachés dans l'atmosphère.</explication>
+        <explication>En France, en moyenne, à chaque kWh d'électricité généré seulement 52g de CO2 sont relachés dans l'atmosphère.</explication>
     </question>
     <question>
         <id>4</id>
         <theme>nature</theme>
+        <niveau>difficile</niveau>
         <img></img>
         <contenu>Quel pourcentage des émissions mondiales de CO2 provient de la déforestation ?</contenu>
         <choix>1</choix>
@@ -59,6 +63,7 @@
     <question>
         <id>5</id>
         <theme>monde</theme>
+        <niveau>facile</niveau>
         <img></img>
         <contenu>Quel est le principal gaz à effet de serre émis par les activités humaines ?</contenu>
         <choix>1</choix>
@@ -73,6 +78,7 @@
     <question>
         <id>6</id>
         <theme>nature</theme>
+        <niveau>difficile</niveau>
         <img></img>
         <contenu>Quel est le pourcentage de la surface terrestre couverte par les forêts ?</contenu>
         <choix>1</choix>
@@ -87,6 +93,7 @@
     <question>
         <id>7</id>
         <theme>monde</theme>
+        <niveau>facile</niveau>
         <img></img>
         <contenu>Quel pays est le plus grand émetteur de CO2 au monde ?</contenu>
         <choix>1</choix>
@@ -101,6 +108,7 @@
     <question>
         <id>8</id>
         <theme>dechets</theme>
+        <niveau>moyen</niveau>
         <img></img>
         <contenu>Quel est le principal contributeur à la pollution plastique des océans ?</contenu>
         <choix>1</choix>
@@ -115,6 +123,7 @@
     <question>
         <id>9</id>
         <theme>nature</theme>
+        <niveau>difficile</niveau>
         <img></img>
         <contenu>Quel est l'impact principal de l'acidification des océans ?</contenu>
         <choix>1</choix>
@@ -129,6 +138,7 @@
     <question>
         <id>10</id>
         <theme>nature</theme>
+        <niveau>facile</niveau>
         <img></img>
         <contenu>Quel est le principal effet du réchauffement climatique sur les calottes glaciaires ?</contenu>
         <choix>1</choix>
