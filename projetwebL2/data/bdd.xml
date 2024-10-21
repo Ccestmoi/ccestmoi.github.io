@@ -150,4 +150,169 @@
         <point>1</point>
         <explication>Le réchauffement climatique entraîne une réduction de la surface des calottes glaciaires.</explication>
     </question>
+    <question>
+        <id>11</id>
+        <theme>dechets</theme>
+        <niveau>moyen</niveau>
+        <img></img>
+        <contenu>Quel est le temps de décomposition d'une bouteille en plastique ?</contenu>
+        <choix>1</choix>
+        <reponse1>450 ans</reponse1>
+        <reponse2>100 ans</reponse2>
+        <reponse3>50 ans</reponse3>
+        <reponse4>10 ans</reponse4>
+        <bonnereponse>1</bonnereponse>
+        <point>2</point>
+        <explication>Une bouteille en plastique met environ 450 ans à se décomposer.</explication>
+    </question>
+    <question>
+        <id>12</id>
+        <theme>energie</theme>
+        <niveau>difficile</niveau>
+        <img></img>
+        <contenu>Quelle est la source d'énergie renouvelable la plus utilisée dans le monde ?</contenu>
+        <choix>1</choix>
+        <reponse1>Énergie solaire</reponse1>
+        <reponse2>Énergie éolienne</reponse2>
+        <reponse3>Énergie hydraulique</reponse3>
+        <reponse4>Biomasse</reponse4>
+        <bonnereponse>3</bonnereponse>
+        <point>3</point>
+        <explication>L'énergie hydraulique est la source d'énergie renouvelable la plus utilisée dans le monde.</explication>
+    </question>
+    <question>
+        <id>13</id>
+        <theme>transport</theme>
+        <niveau>facile</niveau>
+        <img></img>
+        <contenu>Quel type de transport est le plus polluant par passager-kilomètre ?</contenu>
+        <choix>1</choix>
+        <reponse1>Avion</reponse1>
+        <reponse2>Voiture</reponse2>
+        <reponse3>Train</reponse3>
+        <reponse4>Vélo</reponse4>
+        <bonnereponse>1</bonnereponse>
+        <point>1</point>
+        <explication>L'avion est le type de transport le plus polluant par passager-kilomètre.</explication>
+    </question>
+    <question>
+        <id>14</id>
+        <theme>numerique</theme>
+        <niveau>moyen</niveau>
+        <img></img>
+        <contenu>Quel est l'impact principal de l'utilisation excessive des appareils numériques ?</contenu>
+        <choix>1</choix>
+        <reponse1>Augmentation de la consommation d'énergie</reponse1>
+        <reponse2>Réduction de la consommation d'énergie</reponse2>
+        <reponse3>Augmentation de la biodiversité</reponse3>
+        <reponse4>Réduction de la biodiversité</reponse4>
+        <bonnereponse>1</bonnereponse>
+        <point>2</point>
+        <explication>L'utilisation excessive des appareils numériques entraîne une augmentation de la consommation d'énergie.</explication>
+    </question>
+    <question>
+        <id>15</id>
+        <theme>monde</theme>
+        <niveau>difficile</niveau>
+        <img></img>
+        <contenu>Quel est le principal objectif du développement durable ?</contenu>
+        <choix>1</choix>
+        <reponse1>Protéger l'environnement</reponse1>
+        <reponse2>Améliorer la qualité de vie</reponse2>
+        <reponse3>Assurer la prospérité économique</reponse3>
+        <reponse4>Les trois</reponse4>
+        <bonnereponse>4</bonnereponse>
+        <point>3</point>
+        <explication>Le développement durable vise à protéger l'environnement, améliorer la qualité de vie et assurer la prospérité économique.</explication>
+    </question>
+    <question>
+        <id>16</id>
+        <theme>nature</theme>
+        <niveau>facile</niveau>
+        <img></img>
+        <contenu>Quel est le principal facteur de la déforestation ?</contenu>
+        <choix>1</choix>
+        <reponse1>Exploitation forestière</reponse1>
+        <reponse2>Agriculture</reponse2>
+        <reponse3>Urbanisation</reponse3>
+        <reponse4>Feux de forêt</reponse4>
+        <bonnereponse>2</bonnereponse>
+        <point>1</point>
+        <explication>L'agriculture est le principal facteur de la déforestation.</explication>
+    </question>
+    <question>
+        <id>17</id>
+        <theme>dechets</theme>
+        <niveau>difficile</niveau>
+        <img></img>
+        <contenu>Quel pays produit le plus de déchets par habitant ?</contenu>
+        <choix>1</choix>
+        <reponse1>États-Unis</reponse1>
+        <reponse2>Chine</reponse2>
+        <reponse3>Inde</reponse3>
+        <reponse4>Japon</reponse4>
+        <bonnereponse>1</bonnereponse>
+        <point>3</point>
+        <explication>Les États-Unis produisent le plus de déchets par habitant.</explication>
+    </question>
+    <question>
+        <id>18</id>
+        <theme>energie</theme>
+        <niveau>moyen</niveau>
+        <img></img>
+        <contenu>Quelle est la part de l'énergie nucléaire dans la production d'électricité en France ?</contenu>
+        <choix>1</choix>
+        <reponse1>70%</reponse1>
+        <reponse2>50%</reponse2>
+        <reponse3>30%</reponse3>
+        <reponse4>10%</reponse4>
+        <bonnereponse>1</bonnereponse>
+        <point>2</point>
+        <explication>En France, environ 70% de l'électricité est produite par des centrales nucléaires.</explication>
+    </question>
+    <question>
+        <id>19</id>
+        <theme>transport</theme>
+        <niveau>moyen</niveau>
+        <img></img>
+        <contenu>Quel est le mode de transport le plus écologique ?</contenu>
+        <choix>1</choix>
+        <reponse1>Vélo</reponse1>
+        <reponse2>Voiture électrique</reponse2>
+        <reponse3>Train</reponse3>
+        <reponse4>Avion</reponse4>
+        <bonnereponse>1</bonnereponse>
+        <point>2</point>
+        <explication>Le vélo est le mode de transport le plus écologique.</explication>
+    </question>
+    <question>
+        <id>20</id>
+        <theme>numerique</theme>
+        <niveau>difficile</niveau>
+        <img></img>
+        <contenu>Quel est l'impact environnemental des centres de données ?</contenu>
+        <choix>1</choix>
+        <reponse1>Consommation élevée d'énergie</reponse1>
+        <reponse2>Réduction de la consommation d'énergie</reponse2>
+        <reponse3>Augmentation de la biodiversité</reponse3>
+        <reponse4>Réduction de la biodiversité</reponse4>
+        <bonnereponse>1</bonnereponse>
+        <point>3</point>
+        <explication>Les centres de données ont un impact environnemental important en raison de leur consommation élevée d'énergie.</explication>
+    </question>
+    <question>
+        <id>21</id>
+        <theme>monde</theme>
+        <niveau>facile</niveau>
+        <img></img>
+        <contenu>Quel est le principal objectif de l'Accord de Paris ?</contenu>
+        <choix>1</choix>
+        <reponse1>Réduire les émissions de gaz à effet de serre</reponse1>
+        <reponse2>Augmenter les émissions de gaz à effet de serre</reponse2>
+        <reponse3>Stabiliser les émissions de gaz à effet de serre</reponse3>
+        <reponse4>Éliminer les émissions de gaz à effet de serre</reponse4>
+        <bonnereponse>1</bonnereponse>
+        <point>1</point>
+        <explication>L'objectif principal de l'Accord de Paris est de réduire les émissions de gaz à effet de serre.</explication>
+    </question>
 </data>

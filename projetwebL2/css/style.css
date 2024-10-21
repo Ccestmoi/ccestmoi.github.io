@@ -2,3 +2,42 @@ table, th, td {
     border: 1px solid;
     border-color: green;
 }
+#filtre {
+    display: flex;
+    justify-content: space-around;
+}
+h1 {
+    text-align: center;
+}
+header {
+    background-color: rgb(0, 127, 255);
+    color: white;
+    padding: 10px;
+}
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: large;
+}
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.ligne {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+.tuile {
+    display: flex;
+    width: 20dvh;
+    height: 20dvh;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    background-color: green;
+    border-radius: 25px;
+}
