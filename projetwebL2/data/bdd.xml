@@ -4,6 +4,7 @@
         <id>1</id>
         <theme>numerique</theme>
         <niveau>moyen</niveau>
+        <lot>1</lot>
         <img></img>
         <contenu>Quel est la proportion de CO2 générée par l'informatique dans le monde actuellement ?</contenu>
         <choix>1</choix>
@@ -19,6 +20,7 @@
         <id>2</id>
         <theme>transport</theme>
         <niveau>facile</niveau>
+        <lot>1</lot>
         <img></img>
         <contenu>Quel est la proportion de CO2 générée par l'activité aérienne dans le monde actuellement ?</contenu>
         <choix>1</choix>
@@ -34,6 +36,7 @@
         <id>3</id>
         <theme>energie</theme>
         <niveau>moyen</niveau>
+        <lot>1</lot>
         <img></img>
         <contenu>En France, quelle est la part de CO2/kWh d'électricité généré ?</contenu>
         <choix>1</choix>
@@ -49,6 +52,7 @@
         <id>4</id>
         <theme>nature</theme>
         <niveau>difficile</niveau>
+        <lot>1</lot>
         <img></img>
         <contenu>Quel pourcentage des émissions mondiales de CO2 provient de la déforestation ?</contenu>
         <choix>1</choix>
@@ -64,6 +68,7 @@
         <id>5</id>
         <theme>monde</theme>
         <niveau>facile</niveau>
+        <lot>1</lot>
         <img></img>
         <contenu>Quel est le principal gaz à effet de serre émis par les activités humaines ?</contenu>
         <choix>1</choix>
@@ -79,6 +84,7 @@
         <id>6</id>
         <theme>nature</theme>
         <niveau>difficile</niveau>
+        <lot>1</lot>
         <img></img>
         <contenu>Quel est le pourcentage de la surface terrestre couverte par les forêts ?</contenu>
         <choix>1</choix>
@@ -94,6 +100,7 @@
         <id>7</id>
         <theme>monde</theme>
         <niveau>facile</niveau>
+        <lot>1</lot>
         <img></img>
         <contenu>Quel pays est le plus grand émetteur de CO2 au monde ?</contenu>
         <choix>1</choix>
@@ -109,6 +116,7 @@
         <id>8</id>
         <theme>dechets</theme>
         <niveau>moyen</niveau>
+        <lot>1</lot>
         <img></img>
         <contenu>Quel est le principal contributeur à la pollution plastique des océans ?</contenu>
         <choix>1</choix>
@@ -124,6 +132,7 @@
         <id>9</id>
         <theme>nature</theme>
         <niveau>difficile</niveau>
+        <lot>1</lot>
         <img></img>
         <contenu>Quel est l'impact principal de l'acidification des océans ?</contenu>
         <choix>1</choix>
@@ -139,6 +148,7 @@
         <id>10</id>
         <theme>nature</theme>
         <niveau>facile</niveau>
+        <lot>1</lot>
         <img></img>
         <contenu>Quel est le principal effet du réchauffement climatique sur les calottes glaciaires ?</contenu>
         <choix>1</choix>
@@ -154,6 +164,7 @@
         <id>11</id>
         <theme>dechets</theme>
         <niveau>moyen</niveau>
+        <lot>2</lot>
         <img></img>
         <contenu>Quel est le temps de décomposition d'une bouteille en plastique ?</contenu>
         <choix>1</choix>
@@ -169,6 +180,7 @@
         <id>12</id>
         <theme>energie</theme>
         <niveau>difficile</niveau>
+        <lot>2</lot>
         <img></img>
         <contenu>Quelle est la source d'énergie renouvelable la plus utilisée dans le monde ?</contenu>
         <choix>1</choix>
@@ -184,6 +196,7 @@
         <id>13</id>
         <theme>transport</theme>
         <niveau>facile</niveau>
+        <lot>2</lot>
         <img></img>
         <contenu>Quel type de transport est le plus polluant par passager-kilomètre ?</contenu>
         <choix>1</choix>
@@ -199,6 +212,7 @@
         <id>14</id>
         <theme>numerique</theme>
         <niveau>moyen</niveau>
+        <lot>2</lot>
         <img></img>
         <contenu>Quel est l'impact principal de l'utilisation excessive des appareils numériques ?</contenu>
         <choix>1</choix>
@@ -214,6 +228,7 @@
         <id>15</id>
         <theme>monde</theme>
         <niveau>difficile</niveau>
+        <lot>2</lot>
         <img></img>
         <contenu>Quel est le principal objectif du développement durable ?</contenu>
         <choix>1</choix>
@@ -229,6 +244,7 @@
         <id>16</id>
         <theme>nature</theme>
         <niveau>facile</niveau>
+        <lot>2</lot>
         <img></img>
         <contenu>Quel est le principal facteur de la déforestation ?</contenu>
         <choix>1</choix>
@@ -244,6 +260,7 @@
         <id>17</id>
         <theme>dechets</theme>
         <niveau>difficile</niveau>
+        <lot>2</lot>
         <img></img>
         <contenu>Quel pays produit le plus de déchets par habitant ?</contenu>
         <choix>1</choix>
@@ -259,6 +276,7 @@
         <id>18</id>
         <theme>energie</theme>
         <niveau>moyen</niveau>
+        <lot>2</lot>
         <img></img>
         <contenu>Quelle est la part de l'énergie nucléaire dans la production d'électricité en France ?</contenu>
         <choix>1</choix>
@@ -274,6 +292,7 @@
         <id>19</id>
         <theme>transport</theme>
         <niveau>moyen</niveau>
+        <lot>2</lot>
         <img></img>
         <contenu>Quel est le mode de transport le plus écologique ?</contenu>
         <choix>1</choix>
@@ -289,6 +308,7 @@
         <id>20</id>
         <theme>numerique</theme>
         <niveau>difficile</niveau>
+        <lot>2</lot>
         <img></img>
         <contenu>Quel est l'impact environnemental des centres de données ?</contenu>
         <choix>1</choix>
@@ -304,6 +324,7 @@
         <id>21</id>
         <theme>monde</theme>
         <niveau>facile</niveau>
+        <lot>2</lot>
         <img></img>
         <contenu>Quel est le principal objectif de l'Accord de Paris ?</contenu>
         <choix>1</choix>
