@@ -21,4 +21,5 @@ Interface apprendre
 
 Bouton pour afficher toutes les questions
 Case thematique et niveau: permet le filtrage des questions en fonction 
-    du theme et niveau après click sur le bouton "appliquer"
+    du theme et niveau selectionné, l'affichage est mis a jour automatiquement
+Le bouton "Défaut" permet d'afficher toutes les questions
