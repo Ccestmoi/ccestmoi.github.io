@@ -1,6 +1,8 @@
-table, th, td {
-    border: 1px solid;
-    border-color: green;
+body, header {
+    transition: background-color 0.5s ease;
+}
+h3 {
+    text-align: center;
 }
 #filtre {
     display: flex;
@@ -41,8 +43,60 @@ header a {
     background-color: rgb(0, 127, 255);
     border-radius: 25px;
 }
+.tuile:hover {
+    transition: ease-in-out 0.2s;
+    font-size: x-large;
+    background-color: rgb(0, 100, 200);
+    box-shadow: 0 0 10px 5px rgb(0, 127, 255);
+}
 .ligne a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+}
+#detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: large;
+    margin-top: 15dvh;
+}
+#reponses, #question, #reponse, #score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: large;
+}
+#data img {
+    margin-left: 2dvh;
+}
+#pageLinks {
+    justify-content: center;
+    gap: 10px;
+}
+#choix, #niveau {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+#reponses-choix {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 2dvh;
+}
+#correction {
+    width: 100%;
+}
+.center-table {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.selected-button {
+    background-color: #007bff !important; /* Couleur bleu de Bootstrap */
+    color: white !important; /* Texte blanc */
 }
