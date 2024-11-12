@@ -135,9 +135,7 @@ function triPoints(a, b) {
 //Fonction pour trier les données
 function sortData() {
     let n = document.getElementById("sort").value;
-    if (n === "") {
-        return;
-    } else if (n === "Pasc"){
+    if (n === "Pasc"){
         data.sort(triPoints);
     }
     else if (n === "Pdesc") {
@@ -249,6 +247,7 @@ function startjeu(){
     displayQuestion();
 };
 
+//Fonction pour le timer
 function timer() {
     timerInterval = setInterval(function() {
         time--;
@@ -378,7 +377,14 @@ function endGame() {
     document.getElementById("choix").style.display = "none";
     document.getElementById("timer").style.display = "none";
     document.getElementById("score").innerHTML += score + "/" + maxscore;
-    document.getElementById("score").style.display = "flex";
-    document.getElementById("table-correction").style.display = "flex";
+    document.getElementById("fin").style.display = "flex";
     localStorage.removeItem("reponses");
+}
+
+
+
+//Apparence page
+function darkMode() {
+    document.body.style.backgroundColor = "rgb(0, 0, 0)";
+    document.body.style.color = "rgb(255, 255, 255)";
 }
