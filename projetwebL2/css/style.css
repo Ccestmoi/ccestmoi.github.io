@@ -62,7 +62,7 @@ header a {
     font-size: large;
     margin-top: 15dvh;
 }
-#reponses, #question, #reponse, #score {
+#reponses, #question, #reponse, #score, #timer {
     display: flex;
     flex-direction: column;
     align-items: center;
