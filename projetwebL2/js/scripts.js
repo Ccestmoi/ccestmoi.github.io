@@ -2,6 +2,14 @@
 let xmlhttp = new XMLHttpRequest();
 let data = [];
 
+//Canvas
+let canvas;
+let ctx;
+if (window.location.pathname.endsWith("statistiques.html")) {
+    canvas = document.querySelector("#myCanvas");
+    ctx = canvas.getContext("2d");
+}
+
 //Définition des variables pour le jeu
 let questions_jeu = [];
 let currentQuestion = -1;
@@ -18,8 +26,10 @@ let time = 0;
 let timerInterval;
 
 //Définition des variables pour les statistiques
-
-
+let historique = new Array();
+let partie = [];
+let currentMonth = new Date().getMonth();
+let currentYear = new Date().getFullYear();
 
 //Définition des variables pour la pagination
 let nbPage = 0;
@@ -27,6 +37,7 @@ let pageSize = 5;
 let startIndex = 0;
 let endIndex = 0;
 let page = 1;
+
 
 //Charge la bdd
 function loadXMLDoc1() {
@@ -159,7 +170,7 @@ function showPageLinks() {
     page = 1;
 
     for (i = 1; i <= nbPage; i++) {
-        pageLinks += "<input type='button' onclick='loadPage(" + i
+        pageLinks += "<input type='button' class='btn btn-primary' onclick='loadPage(" + i
         +")' value='"+i+"'></input>";
         
     }
@@ -191,7 +202,6 @@ function displayQuestionById() {
             document.getElementById("reponse").innerHTML  = "<h4>Explication</h4>" + x[i].getElementsByTagName("explication")[0].childNodes[0].nodeValue;
         }
     }
-    
 } 
 
 //Fonction de choix de niveau
@@ -260,6 +270,7 @@ function timer() {
     }, 1000);
 }
 
+
 //Fonction pour afficher les questions dans le jeu
 function displayQuestion() {
     if (currentQuestion >= questions_jeu.length - 1) {
@@ -270,11 +281,14 @@ function displayQuestion() {
 
     //Timer
     if (niveau == 1) {
-        time = 31;
+        time = 30;
+        document.getElementById("timer-value").innerHTML = 30;
     } else if (niveau == 2) {
-        time = 21;
+        time = 20;
+        document.getElementById("timer-value").innerHTML = 20;
     } else if (niveau == 3) {
-        time = 6;
+        time = 5;
+        document.getElementById("timer-value").innerHTML = 5;
     }
     timer();
 
@@ -335,14 +349,17 @@ function checkAnswer(reponse) {
     setTimeout(function() {document.body.style.backgroundColor = "";displayQuestion()}, 1000);
 }
 
-// ! Le tableau ne s'affiche pas si fchaine est vide
-
-
 //Fonction de création du tableau de correction
 function correction() {
     //Récupération des réponses utilisateur
     let fchaine = localStorage.getItem("reponses");
-    let reponses = fchaine.split(',');
+    let reponses = [];
+
+    if (fchaine) {
+        reponses = fchaine.split(",");
+    } else {
+        reponses = new Array(questions_jeu.length).fill(undefined);
+    }
 
     //Création du tableau
     let table = "<tr><th>Question</th><th>Réponse correcte</th><th>Réponse donnée</th></tr>";
@@ -372,6 +389,30 @@ function correction() {
 
 //Fonction fin de jeu
 function endGame() {
+    //Récupération de l'historique
+    let fchaine1 = localStorage.getItem("historique");
+    if (fchaine1 == null) {
+        historique = [];
+    } else {
+        historique = JSON.parse(fchaine1);
+    }
+
+    //Récupération de la date
+    let now = new Date();
+    let date = now.getFullYear() + "-" + (now.getMonth() + 1) + "-" + now.getDate();
+    //Calcul du score
+    let scoreSur10 = (score/maxscore) * 10;
+    scoreSur10 = scoreSur10.toFixed(2);
+
+    //Enregistrement de la partie
+    partie = [scoreSur10, date];
+
+    //Enregistrement de la partie dans l'historique
+    historique.push(partie);
+    let fchaine = JSON.stringify(historique);
+    console.log(fchaine);
+    localStorage.setItem("historique", fchaine);
+    
     correction();
     document.getElementById("question").style.display = "none";
     document.getElementById("choix").style.display = "none";
@@ -381,7 +422,143 @@ function endGame() {
     localStorage.removeItem("reponses");
 }
 
+// Fonction de chargement des statistiques
+function loadStats() {
+    // Récupération des statistiques
+    let fchaine = localStorage.getItem("historique");
 
+    if (fchaine) {
+        historique = JSON.parse(fchaine);
+    } else {
+        document.getElementById("stats").innerHTML = "<br><h2>Statistiques</h2><br> Pas de statistiques disponibles";
+        return;
+    }
+
+    // Affichage des statistiques
+    let nb_parties = historique.length;
+    let scoremoyen = 0;
+
+    for (let i = 0; i < nb_parties; i++) {
+        scoremoyen += parseFloat(historique[i][0]);
+    }
+
+    scoremoyen = scoremoyen / nb_parties;
+
+    document.getElementById("nb_parties").innerHTML += nb_parties;
+    document.getElementById("score_moy").innerHTML += scoremoyen.toFixed(2);
+
+    updateHistogram();
+}
+
+// Fonction pour mettre à jour l'histogramme
+function updateHistogram() {
+    let now = new Date(currentYear, currentMonth);
+    let month_year = now.toLocaleDateString('fr-FR', { month: 'long', year: 'numeric' });
+
+    // Mettre la première lettre du mois en majuscule
+    month_year = month_year.charAt(0).toUpperCase() + month_year.slice(1);
+
+    document.getElementById("histogramme").innerHTML = "<button class='btn btn-primary' onclick='prevMonth()'>Prec</button>" + month_year + "<button class='btn btn-primary' onclick='nextMonth()'>Suiv</button>";
+
+    // Affichage du graphique
+    drawHistogram();
+}
+
+// Fonction pour passer au mois précédent
+function prevMonth() {
+    if (currentMonth === 0) {
+        currentMonth = 11;
+        currentYear--;
+    } else {
+        currentMonth--;
+    }
+    updateHistogram();
+}
+
+// Fonction pour passer au mois suivant
+function nextMonth() {
+    if (currentMonth === 11) {
+        currentMonth = 0;
+        currentYear++;
+    } else {
+        currentMonth++;
+    }
+    updateHistogram();
+}
+
+// Fonction de dessin de l'histogramme
+function drawHistogram() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    let max_height = 400;
+    let colonne_width = 10;
+    let vertical_offset = 20; // Décalage vertical
+
+    // Dessiner l'axe vertical avec des graduations jusqu'à 10
+    ctx.beginPath();
+    ctx.moveTo(50, vertical_offset);
+    ctx.lineTo(50, max_height + vertical_offset);
+    ctx.stroke();
+
+    for (let i = 0; i <= 10; i++) {
+        let y = max_height - (i * 40) + vertical_offset;
+        ctx.moveTo(45, y);
+        ctx.lineTo(55, y);
+        ctx.stroke();
+        ctx.fillText(i, 30, y + 5);
+    }
+
+    // Dessiner l'axe horizontal avec 30 ou 31 jours en fonction du mois
+    let now = new Date(currentYear, currentMonth);
+    let daysInMonth = new Date(now.getFullYear(), now.getMonth() + 1, 0).getDate();
+
+    ctx.beginPath();
+    ctx.moveTo(50, max_height + vertical_offset);
+    ctx.lineTo(70 + (daysInMonth * (colonne_width + 15)), max_height + vertical_offset);
+    ctx.stroke();
+
+    for (let i = 1; i <= daysInMonth; i++) {
+        let x = 50 + (i * (colonne_width + 15));
+
+        // Formater la date sous la forme "DD/MM"
+        if (i % 2 == 0) {
+            let date = new Date(now.getFullYear(), now.getMonth(), i);
+            let dateString = date.toLocaleDateString('fr-FR', { day: '2-digit', month: '2-digit' });
+            ctx.fillText(dateString, x - 15, max_height + vertical_offset + 20);
+        }
+    }
+
+    // Calculer la moyenne des scores pour chaque jour
+    let scoresByDay = Array(daysInMonth).fill(0);
+    let countsByDay = Array(daysInMonth).fill(0);
+
+    for (let i = 0; i < historique.length; i++) {
+        let date = new Date(historique[i][1]);
+        if (date.getMonth() === now.getMonth() && date.getFullYear() === now.getFullYear()) {
+            let day = date.getDate() - 1;
+            scoresByDay[day] += parseFloat(historique[i][0]);
+            countsByDay[day]++;
+        }
+    }
+
+    let averagesByDay = scoresByDay.map((total, index) => countsByDay[index] ? total / countsByDay[index] : 0);
+
+    // Dessiner l'histogramme à partir des moyennes calculées
+    for (let i = 0; i < daysInMonth; i++) {
+        let x = 42 + ((i + 1) * (colonne_width + 15)); // Ajuster la position horizontale
+        let height = -averagesByDay[i] * 40; // Ajuster l'échelle si nécessaire
+        ctx.fillRect(x, max_height + vertical_offset, colonne_width, height);
+    }
+
+    for (let i = 0; i < historique.length; i++) {
+        let date = new Date(historique[i][1]);
+        if (date.getMonth() === now.getMonth() && date.getFullYear() === now.getFullYear()) {
+            let day = date.getDate() - 1;
+            scoresByDay[day] += parseFloat(historique[i][0]);
+            countsByDay[day]++;
+        }
+    }
+}
 
 //Apparence page
 function darkMode() {

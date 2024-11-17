@@ -4,13 +4,17 @@
         <title>Jeu Environnement</title>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="js/scripts.js"></script>
+        <script src="js/scripts.js" defer></script>
         <link rel="stylesheet" type="text/css" href="css/style.css"></link>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> 
     </head>
     
-    <body onload="loadXMLDoc1()">
+    <body onload="loadStats()">
         <header>
+            <div id="azure">
+                <a href="https://delightful-pond-089795303.4.azurestaticapps.net" target="_blank"><img src="Microsoft_Azure.svg" height="20px"></a>
+                <!--<button onclick="darkMode()">Sombre</button>-->
+            </div>
             <div class="nav-links">
                 <a href="index.html">Accueil</a>
                 <a href="apprendre.html">Apprendre</a>
@@ -18,5 +22,21 @@
             </div>
         </header>
 
+        <div id="stats" class="center">
+            <br>
+            <h1>Statistiques</h1>
+            <br>
+                
+            <p id="nb_parties">Parties Jouées : </p>
+            <p id="score_moy">Score Moyen : </p>
+
+            <h2>Stats</h2>
+
+            <canvas id="myCanvas" width="900px" height="450px">
+            </canvas>
+
+            <div id="histogramme" class="center">
+            </div>
+        </div>
     </body>
 </html>

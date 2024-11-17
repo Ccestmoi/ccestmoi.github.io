@@ -74,6 +74,12 @@ header a {
     align-items: center;
     font-size: large;
 }
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: large;
+}
 #data img {
     margin-left: 2dvh;
 }
@@ -108,4 +114,16 @@ header a {
 .selected-button {
     background-color: #007bff !important; /* Couleur bleu de Bootstrap */
     color: white !important; /* Texte blanc */
+}
+#myCanvas {
+    background-color: rgba(200, 200, 220, 0.5);
+}
+#stats {
+    width: 100%;
+}
+#histogramme {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 3dvh;
 }
