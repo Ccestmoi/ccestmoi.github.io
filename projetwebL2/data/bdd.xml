@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <data>
     <question>
         <id>1</id>
@@ -6,7 +6,6 @@
         <niveau>moyen</niveau>
         <lot>1</lot>
         <contenu>Quel est la proportion de CO2 générée par l'informatique dans le monde actuellement ?</contenu>
-        <choix>1</choix>
         <reponse1>10%</reponse1>
         <reponse2>30%</reponse2>
         <reponse3>4%</reponse3>
@@ -21,7 +20,6 @@
         <niveau>facile</niveau>
         <lot>2</lot>
         <contenu>Quel est la proportion de CO2 générée par l'activité aérienne dans le monde actuellement ?</contenu>
-        <choix>1</choix>
         <reponse1>5%</reponse1>
         <reponse2>17%</reponse2>
         <reponse3>10%</reponse3>
@@ -36,7 +34,6 @@
         <niveau>moyen</niveau>
         <lot>3</lot>
         <contenu>En France, quelle est la part de CO2/kWh d'électricité généré ?</contenu>
-        <choix>1</choix>
         <reponse1>500g</reponse1>
         <reponse2>210g</reponse2>
         <reponse3>1kg</reponse3>
@@ -51,7 +48,6 @@
         <niveau>difficile</niveau>
         <lot>1</lot>
         <contenu>Quel pourcentage des émissions mondiales de CO2 provient de la déforestation ?</contenu>
-        <choix>1</choix>
         <reponse1>10%</reponse1>
         <reponse2>15%</reponse2>
         <reponse3>20%</reponse3>
@@ -66,7 +62,6 @@
         <niveau>facile</niveau>
         <lot>2</lot>
         <contenu>Quel est le principal gaz à effet de serre émis par les activités humaines ?</contenu>
-        <choix>1</choix>
         <reponse1>Méthane</reponse1>
         <reponse2>Oxyde nitreux</reponse2>
         <reponse3>Vapeur d'eau</reponse3>
@@ -81,7 +76,6 @@
         <niveau>difficile</niveau>
         <lot>3</lot>
         <contenu>Quel est le pourcentage de la surface terrestre couverte par les forêts ?</contenu>
-        <choix>1</choix>
         <reponse1>31%</reponse1>
         <reponse2>21%</reponse2>
         <reponse3>41%</reponse3>
@@ -96,7 +90,6 @@
         <niveau>facile</niveau>
         <lot>1</lot>
         <contenu>Quel pays est le plus grand émetteur de CO2 au monde ?</contenu>
-        <choix>1</choix>
         <reponse1>États-Unis</reponse1>
         <reponse2>Inde</reponse2>
         <reponse3>Chine</reponse3>
@@ -111,7 +104,6 @@
         <niveau>moyen</niveau>
         <lot>2</lot>
         <contenu>Quel est le principal contributeur à la pollution plastique des océans ?</contenu>
-        <choix>1</choix>
         <reponse1>Sacs en plastique</reponse1>
         <reponse2>Bouteilles en plastique</reponse2>
         <reponse3>Microplastiques</reponse3>
@@ -126,7 +118,6 @@
         <niveau>difficile</niveau>
         <lot>3</lot>
         <contenu>Quel est l'impact principal de l'acidification des océans ?</contenu>
-        <choix>1</choix>
         <reponse1>Blanchiment des coraux</reponse1>
         <reponse2>Augmentation des tempêtes</reponse2>
         <reponse3>Élévation du niveau de la mer</reponse3>
@@ -141,7 +132,6 @@
         <niveau>facile</niveau>
         <lot>1</lot>
         <contenu>Quel est le principal effet du réchauffement climatique sur les calottes glaciaires ?</contenu>
-        <choix>1</choix>
         <reponse1>Augmentation de la surface</reponse1>
         <reponse2>Réduction de la surface</reponse2>
         <reponse3>Stabilisation de la surface</reponse3>
@@ -156,7 +146,6 @@
         <niveau>moyen</niveau>
         <lot>2</lot>
         <contenu>Quel est le temps de décomposition d'une bouteille en plastique ?</contenu>
-        <choix>1</choix>
         <reponse1>450 ans</reponse1>
         <reponse2>100 ans</reponse2>
         <reponse3>50 ans</reponse3>
@@ -171,7 +160,6 @@
         <niveau>difficile</niveau>
         <lot>3</lot>
         <contenu>Quelle est la source d'énergie renouvelable la plus utilisée dans le monde ?</contenu>
-        <choix>1</choix>
         <reponse1>Énergie solaire</reponse1>
         <reponse2>Énergie éolienne</reponse2>
         <reponse3>Énergie hydraulique</reponse3>
@@ -186,7 +174,6 @@
         <niveau>facile</niveau>
         <lot>1</lot>
         <contenu>Quel type de transport est le plus polluant par passager-kilomètre ?</contenu>
-        <choix>1</choix>
         <reponse1>Avion</reponse1>
         <reponse2>Voiture</reponse2>
         <reponse3>Train</reponse3>
@@ -201,7 +188,6 @@
         <niveau>moyen</niveau>
         <lot>2</lot>
         <contenu>Quel est l'impact principal de l'utilisation excessive des appareils numériques ?</contenu>
-        <choix>1</choix>
         <reponse1>Augmentation de la consommation d'énergie</reponse1>
         <reponse2>Réduction de la consommation d'énergie</reponse2>
         <reponse3>Augmentation de la biodiversité</reponse3>
@@ -216,7 +202,6 @@
         <niveau>difficile</niveau>
         <lot>3</lot>
         <contenu>Quel est le principal objectif du développement durable ?</contenu>
-        <choix>1</choix>
         <reponse1>Protéger l'environnement</reponse1>
         <reponse2>Améliorer la qualité de vie</reponse2>
         <reponse3>Assurer la prospérité économique</reponse3>
@@ -231,7 +216,6 @@
         <niveau>facile</niveau>
         <lot>1</lot>
         <contenu>Quel est le principal facteur de la déforestation ?</contenu>
-        <choix>1</choix>
         <reponse1>Exploitation forestière</reponse1>
         <reponse2>Agriculture</reponse2>
         <reponse3>Urbanisation</reponse3>
@@ -246,7 +230,6 @@
         <niveau>difficile</niveau>
         <lot>2</lot>
         <contenu>Quel pays produit le plus de déchets par habitant ?</contenu>
-        <choix>1</choix>
         <reponse1>États-Unis</reponse1>
         <reponse2>Chine</reponse2>
         <reponse3>Inde</reponse3>
@@ -261,7 +244,6 @@
         <niveau>moyen</niveau>
         <lot>3</lot>
         <contenu>Quelle est la part de l'énergie nucléaire dans la production d'électricité en France ?</contenu>
-        <choix>1</choix>
         <reponse1>70%</reponse1>
         <reponse2>50%</reponse2>
         <reponse3>30%</reponse3>
@@ -276,7 +258,6 @@
         <niveau>moyen</niveau>
         <lot>1</lot>
         <contenu>Quel est le mode de transport le plus écologique ?</contenu>
-        <choix>1</choix>
         <reponse1>Vélo</reponse1>
         <reponse2>Voiture électrique</reponse2>
         <reponse3>Train</reponse3>
@@ -291,7 +272,6 @@
         <niveau>difficile</niveau>
         <lot>2</lot>
         <contenu>Quel est l'impact environnemental des centres de données ?</contenu>
-        <choix>1</choix>
         <reponse1>Consommation élevée d'énergie</reponse1>
         <reponse2>Réduction de la consommation d'énergie</reponse2>
         <reponse3>Augmentation de la biodiversité</reponse3>
@@ -306,7 +286,6 @@
         <niveau>facile</niveau>
         <lot>3</lot>
         <contenu>Quel est le principal objectif de l'Accord de Paris ?</contenu>
-        <choix>1</choix>
         <reponse1>Réduire les émissions de gaz à effet de serre</reponse1>
         <reponse2>Augmenter les émissions de gaz à effet de serre</reponse2>
         <reponse3>Stabiliser les émissions de gaz à effet de serre</reponse3>
@@ -321,7 +300,6 @@
         <niveau>moyen</niveau>
         <lot>1</lot>
         <contenu>Quel est l'impact des voitures électriques sur les émissions de CO2 ?</contenu>
-        <choix>1</choix>
         <reponse1>Éliminent complètement les émissions de CO2</reponse1>
         <reponse2>Réduisent les émissions de CO2</reponse2>
         <reponse3>Augmentent les émissions de CO2</reponse3>
@@ -336,7 +314,6 @@
         <niveau>difficile</niveau>
         <lot>2</lot>
         <contenu>Quelle est la durée de vie moyenne des panneaux solaires ?</contenu>
-        <choix>1</choix>
         <reponse1>10 ans</reponse1>
         <reponse2>20 ans</reponse2>
         <reponse3>25-30 ans</reponse3>
@@ -351,7 +328,6 @@
         <niveau>facile</niveau>
         <lot>3</lot>
         <contenu>Combien de temps un sac en plastique met-il pour se décomposer dans la nature ?</contenu>
-        <choix>1</choix>
         <reponse1>20 ans</reponse1>
         <reponse2>100 ans</reponse2>
         <reponse3>500 ans</reponse3>
@@ -366,7 +342,6 @@
         <niveau>facile</niveau>
         <lot>1</lot>
         <contenu>Quel est l'impact du streaming vidéo sur l'empreinte carbone ?</contenu>
-        <choix>1</choix>
         <reponse1>Aucun impact</reponse1>
         <reponse2>Impact faible</reponse2>
         <reponse3>Impact modéré</reponse3>
@@ -381,7 +356,6 @@
         <niveau>difficile</niveau>
         <lot>2</lot>
         <contenu>Quelle est la part des émissions mondiales de CO2 attribuée au secteur maritime ?</contenu>
-        <choix>1</choix>
         <reponse1>2%</reponse1>
         <reponse2>4%</reponse2>
         <reponse3>8%</reponse3>
@@ -396,7 +370,6 @@
         <niveau>moyen</niveau>
         <lot>3</lot>
         <contenu>Quelles sont les conséquences de la déforestation sur le cycle de l'eau ?</contenu>
-        <choix>1</choix>
         <reponse1>Augmente les précipitations</reponse1>
         <reponse2>Stabilise les niveaux d'eau</reponse2>
         <reponse3>Réduit la disponibilité d'eau douce</reponse3>
@@ -411,7 +384,6 @@
         <niveau>facile</niveau>
         <lot>1</lot>
         <contenu>Quel pourcentage des déchets plastiques est recyclé dans le monde ?</contenu>
-        <choix>1</choix>
         <reponse1>9%</reponse1>
         <reponse2>25%</reponse2>
         <reponse3>50%</reponse3>
@@ -426,7 +398,6 @@
         <niveau>facile</niveau>
         <lot>2</lot>
         <contenu>Quel est l'objectif de l'énergie renouvelable dans les politiques climatiques ?</contenu>
-        <choix>1</choix>
         <reponse1>Remplacer toutes les autres sources d'énergie</reponse1>
         <reponse2>Réduire la dépendance aux énergies fossiles</reponse2>
         <reponse3>Stabiliser les émissions de gaz à effet de serre</reponse3>
@@ -441,7 +412,6 @@
         <niveau>difficile</niveau>
         <lot>3</lot>
         <contenu>Quel est le rôle de la sobriété numérique ?</contenu>
-        <choix>1</choix>
         <reponse1>Réduire la consommation énergétique des appareils numériques</reponse1>
         <reponse2>Augmenter la consommation de données</reponse2>
         <reponse3>Augmenter l'usage des appareils connectés</reponse3>
@@ -456,7 +426,6 @@
         <niveau>moyen</niveau>
         <lot>1</lot>
         <contenu>Quel carburant est considéré comme plus écologique pour les transports en commun ?</contenu>
-        <choix>1</choix>
         <reponse1>Essence</reponse1>
         <reponse2>Hydrogène</reponse2>
         <reponse3>Charbon</reponse3>
@@ -471,7 +440,6 @@
         <niveau>facile</niveau>
         <lot>2</lot>
         <contenu>Quel est l'avantage principal de l'énergie éolienne ?</contenu>
-        <choix>1</choix>
         <reponse1>Coût faible d'installation</reponse1>
         <reponse2>Pas de pollution de l'air</reponse2>
         <reponse3>Production continue</reponse3>
@@ -486,7 +454,6 @@
         <niveau>difficile</niveau>
         <lot>3</lot>
         <contenu>Quelle est la part des déchets électroniques recyclés dans le monde ?</contenu>
-        <choix>1</choix>
         <reponse1>10%</reponse1>
         <reponse2>17%</reponse2>
         <reponse3>30%</reponse3>
@@ -501,7 +468,6 @@
         <niveau>facile</niveau>
         <lot>1</lot>
         <contenu>Quel est l'objectif des journées mondiales de l'environnement ?</contenu>
-        <choix>1</choix>
         <reponse1>Sensibiliser à la préservation de l'environnement</reponse1>
         <reponse2>Encourager la consommation d'énergie</reponse2>
         <reponse3>Augmenter l'industrialisation</reponse3>
@@ -516,7 +482,6 @@
         <niveau>difficile</niveau>
         <lot>2</lot>
         <contenu>Quel est le principal rôle des zones humides dans la lutte contre le changement climatique ?</contenu>
-        <choix>1</choix>
         <reponse1>Absorber le dioxyde de carbone</reponse1>
         <reponse2>Produire de l'oxygène</reponse2>
         <reponse3>Réduire les émissions de méthane</reponse3>
@@ -531,7 +496,6 @@
         <niveau>moyen</niveau>
         <lot>3</lot>
         <contenu>Quel pays est leader mondial dans la production d'énergie solaire ?</contenu>
-        <choix>1</choix>
         <reponse1>Chine</reponse1>
         <reponse2>États-Unis</reponse2>
         <reponse3>Allemagne</reponse3>
@@ -546,7 +510,6 @@
         <niveau>facile</niveau>
         <lot>1</lot>
         <contenu>Quel est l'impact environnemental de l'extraction des matériaux pour les smartphones ?</contenu>
-        <choix>1</choix>
         <reponse1>Elle est négligeable</reponse1>
         <reponse2>Elle contribue à la déforestation</reponse2>
         <reponse3>Elle améliore la qualité de l'air</reponse3>
@@ -561,7 +524,6 @@
         <niveau>difficile</niveau>
         <lot>2</lot>
         <contenu>Quelle quantité d'eau est utilisée pour produire un seul ordinateur portable ?</contenu>
-        <choix>1</choix>
         <reponse1>20 litres</reponse1>
         <reponse2>100 litres</reponse2>
         <reponse3>200 litres</reponse3>
@@ -576,7 +538,6 @@
         <niveau>moyen</niveau>
         <lot>3</lot>
         <contenu>Quel mode de transport a la plus faible empreinte carbone par personne ?</contenu>
-        <choix>1</choix>
         <reponse1>Voiture</reponse1>
         <reponse2>Bus</reponse2>
         <reponse3>Train</reponse3>
@@ -591,7 +552,6 @@
         <niveau>difficile</niveau>
         <lot>1</lot>
         <contenu>Quel pourcentage des émissions de CO2 de l'Union Européenne est lié au secteur des transports ?</contenu>
-        <choix>1</choix>
         <reponse1>10%</reponse1>
         <reponse2>25%</reponse2>
         <reponse3>30%</reponse3>
@@ -606,7 +566,6 @@
         <niveau>facile</niveau>
         <lot>2</lot>
         <contenu>Quelle énergie renouvelable utilise le mouvement de l'eau ?</contenu>
-        <choix>1</choix>
         <reponse1>Énergie solaire</reponse1>
         <reponse2>Énergie éolienne</reponse2>
         <reponse3>Énergie hydraulique</reponse3>
@@ -621,7 +580,6 @@
         <niveau>difficile</niveau>
         <lot>3</lot>
         <contenu>Quel est le principal inconvénient des énergies renouvelables ?</contenu>
-        <choix>1</choix>
         <reponse1>Coût élevé</reponse1>
         <reponse2>Intermittence de la production</reponse2>
         <reponse3>Faible rendement</reponse3>
@@ -636,7 +594,6 @@
         <niveau>moyen</niveau>
         <lot>1</lot>
         <contenu>Quel est le rôle des forêts dans le cycle du carbone ?</contenu>
-        <choix>1</choix>
         <reponse1>Émettre du carbone</reponse1>
         <reponse2>Stocker le carbone</reponse2>
         <reponse3>Produire du méthane</reponse3>
@@ -651,7 +608,6 @@
         <niveau>facile</niveau>
         <lot>2</lot>
         <contenu>Quel est l'impact de la pollution sur les écosystèmes aquatiques ?</contenu>
-        <choix>1</choix>
         <reponse1>Augmente la biodiversité</reponse1>
         <reponse2>N'a aucun effet</reponse2>
         <reponse3>Provoque l'eutrophisation</reponse3>
@@ -666,7 +622,6 @@
         <niveau>difficile</niveau>
         <lot>3</lot>
         <contenu>Quel est l'objectif de la neutralité carbone à l'échelle mondiale ?</contenu>
-        <choix>1</choix>
         <reponse1>Éliminer les émissions de CO2</reponse1>
         <reponse2>Équilibrer les émissions de CO2 avec leur capture</reponse2>
         <reponse3>Réduire les émissions de CO2 de 50%</reponse3>
@@ -681,7 +636,6 @@
         <niveau>moyen</niveau>
         <lot>1</lot>
         <contenu>Quel pays a été le premier à introduire une taxe carbone ?</contenu>
-        <choix>1</choix>
         <reponse1>France</reponse1>
         <reponse2>Suède</reponse2>
         <reponse3>États-Unis</reponse3>
@@ -696,7 +650,6 @@
         <niveau>facile</niveau>
         <lot>2</lot>
         <contenu>Quel déchet ménager est le plus difficile à recycler ?</contenu>
-        <choix>1</choix>
         <reponse1>Papier</reponse1>
         <reponse2>Plastique</reponse2>
         <reponse3>Verre</reponse3>
@@ -711,7 +664,6 @@
         <niveau>difficile</niveau>
         <lot>3</lot>
         <contenu>Quel pays génère le plus de déchets électroniques par habitant ?</contenu>
-        <choix>1</choix>
         <reponse1>États-Unis</reponse1>
         <reponse2>Chine</reponse2>
         <reponse3>Norvège</reponse3>
@@ -719,5 +671,89 @@
         <bonnereponse>3</bonnereponse>
         <point>3</point>
         <explication>La Norvège génère le plus de déchets électroniques par habitant.</explication>
+    </question>
+    <question>
+        <id>49</id>
+        <theme>numerique</theme>
+        <niveau>moyen</niveau>
+        <lot>1</lot>
+        <contenu>Quel est l'impact environnemental de l'intelligence artificielle ?</contenu>
+        <reponse1>Augmentation des émissions</reponse1>
+        <reponse2>Réduction des émissions</reponse2>
+        <reponse3>Aucun impact</reponse3>
+        <reponse4>Amélioration de la biodiversité</reponse4>
+        <bonnereponse>1</bonnereponse>
+        <point>2</point>
+        <explication>L'IA peut entraîner une augmentation des émissions en raison des besoins énergétiques des centres de données.</explication>
+    </question>
+    <question>
+        <id>50</id>
+        <theme>numerique</theme>
+        <niveau>facile</niveau>
+        <lot>2</lot>
+        <contenu>Quelle est la consommation énergétique moyenne d’un appareil connecté ?</contenu>
+        <reponse1>10 W</reponse1>
+        <reponse2>50 W</reponse2>
+        <reponse3>100 W</reponse3>
+        <reponse4>200 W</reponse4>
+        <bonnereponse>2</bonnereponse>
+        <point>1</point>
+        <explication>Un appareil connecté consomme en moyenne 50 W lorsqu'il est en fonctionnement.</explication>
+    </question>
+    <question>
+        <id>51</id>
+        <theme>transport</theme>
+        <niveau>moyen</niveau>
+        <lot>3</lot>
+        <contenu>Quel pourcentage des trajets urbains est effectué à vélo dans les grandes villes européennes ?</contenu>
+        <reponse1>5%</reponse1>
+        <reponse2>15%</reponse2>
+        <reponse3>25%</reponse3>
+        <reponse4>35%</reponse4>
+        <bonnereponse>2</bonnereponse>
+        <point>2</point>
+        <explication>En moyenne, 15% des trajets urbains en Europe sont effectués à vélo.</explication>
+    </question>
+    <question>
+        <id>52</id>
+        <theme>transport</theme>
+        <niveau>difficile</niveau>
+        <lot>1</lot>
+        <contenu>Quel est le principal inconvénient des carburants alternatifs ?</contenu>
+        <reponse1>Coût élevé</reponse1>
+        <reponse2>Disponibilité limitée</reponse2>
+        <reponse3>Pollution accrue</reponse3>
+        <reponse4>Dépendance aux importations</reponse4>
+        <bonnereponse>2</bonnereponse>
+        <point>3</point>
+        <explication>Les carburants alternatifs sont souvent limités en disponibilité, ce qui freine leur adoption.</explication>
+    </question>
+    <question>
+        <id>53</id>
+        <theme>energie</theme>
+        <niveau>facile</niveau>
+        <lot>2</lot>
+        <contenu>Quel est l'avantage principal des panneaux solaires ?</contenu>
+        <reponse1>Production d'énergie propre</reponse1>
+        <reponse2>Faible coût initial</reponse2>
+        <reponse3>Installation rapide</reponse3>
+        <reponse4>Recyclabilité totale</reponse4>
+        <bonnereponse>1</bonnereponse>
+        <point>1</point>
+        <explication>Les panneaux solaires permettent de produire de l'énergie propre à partir du soleil.</explication>
+    </question>
+    <question>
+        <id>54</id>
+        <theme>energie</theme>
+        <niveau>moyen</niveau>
+        <lot>3</lot>
+        <contenu>Quel est le rendement énergétique moyen d'une éolienne ?</contenu>
+        <reponse1>20%</reponse1>
+        <reponse2>40%</reponse2>
+        <reponse3>60%</reponse3>
+        <reponse4>80%</reponse4>
+        <bonnereponse>2</bonnereponse>
+        <point>2</point>
+        <explication>Le rendement moyen des éoliennes est d'environ 40%, selon les conditions de vent.</explication>
     </question>
 </data>
