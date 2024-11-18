@@ -235,7 +235,6 @@ function startjeu(){
 
     if (theme) {
         // Charger les questions en fonction du thème
-        console.log("Thème sélectionné : " + theme);
         for (let i = 0; i < data.length; i++) {
             if (data[i].getElementsByTagName("theme")[0].textContent === theme) {
                 questions_jeu.push(data[i]);
@@ -246,7 +245,6 @@ function startjeu(){
 
     if (lot) {
         // Charger les questions en fonction du lot
-        console.log("Lot sélectionné : " + lot);
         for (let i = 0; i < data.length; i++) {
             if (data[i].getElementsByTagName("lot")[0].textContent === lot) {
                 questions_jeu.push(data[i]);
@@ -254,6 +252,7 @@ function startjeu(){
             }
         }
     }
+
     displayQuestion();
 };
 
@@ -269,7 +268,6 @@ function timer() {
         }
     }, 1000);
 }
-
 
 //Fonction pour afficher les questions dans le jeu
 function displayQuestion() {
@@ -362,7 +360,7 @@ function correction() {
     }
 
     //Création du tableau
-    let table = "<tr><th>Question</th><th>Réponse correcte</th><th>Réponse donnée</th></tr>";
+    let table = "<tr><th>Question</th><th>Réponse correcte</th><th>Réponse donnée</th><th>Explication</th></tr>";
     for (let i = 0; i < questions_jeu.length; i++) {
         let question = questions_jeu[i];
         let reponseCorrecte = question.getElementsByTagName("bonnereponse")[0].textContent;
@@ -382,6 +380,8 @@ function correction() {
         question.getElementsByTagName("reponse" + reponseCorrecte)[0].textContent +
         "</td><td>" +
         ReponseUser +
+        "</td><td>" +
+        question.getElementsByTagName("explication")[0].textContent +
         "</td></tr>";
     }
     document.getElementById("table-correction").innerHTML = table;
@@ -458,7 +458,7 @@ function updateHistogram() {
     // Mettre la première lettre du mois en majuscule
     month_year = month_year.charAt(0).toUpperCase() + month_year.slice(1);
 
-    document.getElementById("histogramme").innerHTML = "<button class='btn btn-primary' onclick='prevMonth()'>Prec</button>" + month_year + "<button class='btn btn-primary' onclick='nextMonth()'>Suiv</button>";
+    document.getElementById("histogramme").innerHTML = "<button class='btn btn-primary' onclick='prevMonth()'>Précédent</button>" + month_year + "<button class='btn btn-primary' onclick='nextMonth()'>Suivant</button>";
 
     // Affichage du graphique
     drawHistogram();
@@ -560,8 +560,17 @@ function drawHistogram() {
     }
 }
 
-//Apparence page
-function darkMode() {
-    document.body.style.backgroundColor = "rgb(0, 0, 0)";
-    document.body.style.color = "rgb(255, 255, 255)";
-}
+//Fonction thème aléatoire
+//function randomTheme() {
+//    let themes = ["nature", "dechets", "monde", "energie", "transport", "numerique"];
+//    let random = Math.floor(Math.random() * themes.length);
+//    let theme = themes[random];
+//    window.location.href = "jeu.html?theme=" + theme;
+//}
+//Fonction lot aléatoire
+//function randomLot() {
+//    let lots = ["1", "2", "3"];
+//    let random = Math.floor(Math.random() * lots.length);
+//    let lot = lots[random];
+//    window.location.href = "jeu.html?lot=" + lot;
+//}
