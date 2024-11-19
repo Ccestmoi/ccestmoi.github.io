@@ -210,13 +210,10 @@ function Niveau(n) {
     if (n == "1") {
         document.getElementById("validation").style.display = "block";
         niveau = 1;
-        time = 30;
     } else if (n == "2") {
         niveau = 2;
-        time = 20;
     } else if (n == "3") {
         niveau = 3;
-        time = 10;
     }
 
     //Affichage des divisions du jeu
