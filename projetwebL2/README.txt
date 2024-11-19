@@ -15,6 +15,44 @@ Chaque question possède les balises suivantes :
 - explication : Explication de la réponse après validation des réponses de l'utilisateur.
 
 
+//UTILISATION DES PAGES WEB
+
+Page index.html:
+   -  Barre de navigation avec des liens vers les autres pages du site
+   -  Tuiles cliquables pour commencer une partie de jeu en fonction du thème et du lot sélectionné
+
+
+Page apprendre.html:
+   - Barre de navigation avec des liens vers les autres pages du site
+   - Sélecteurs de filtrage en fonction du thème et du niveau
+   - Sélecteur de tri en fonction des points de la question en ordre croissant/décroissant
+   - Table HTML avec 5 questions et son niveau/points par page (54 questions au total)
+   - À côté de chaque question, un bouton cliquable pour accéder au détail de la question
+   - Boutons de pagination pour changer la page de questions affichées dans la table
+
+
+Page statistiques.html:
+   - Barre de navigation avec des liens vers les autres pages du site
+   - Message affiché si aucune partie n'a été jouée
+   - Sinon, affichage du nombre de parties jouées et la moyenne générale
+   - Affichage de l'historique des moyennes sur 10 par jour sous forme d'un histogramme pour le mois actuel
+   - Boutons précédent et suivant pour changer le mois affiché dans l'histogramme
+
+
+Page jeu.html:
+   - Barre de navigation avec un lien vers l'accueil (la progression dans la partie est perdue)
+   - Premier choix de l'utilisateur: le niveau (temps plus ou moins court pour répondre à la question
+      et possibilité de savoir si la réponse était vraie ou fausse) sous forme d'un bouton cliquable 
+      qui lance ensuite la partie
+   - Lorsque la partie est lancée, le minuteur, la première question et les réponses possibles sont affichés.
+   - Pour le niveau facile, le bouton "Valider" doit être cliqué pour valider la réponse, pour les autres niveaux, 
+      un simple clic sur la réponse la valide.
+   - Si l'utilisateur arrive à cours de temps, la question est considérée comme non répondue
+   - Lorsque toutes les questions sont passées, le score obtenu sur le score maximal ainsi qu'une table avec 
+      les questions, la réponse correcte, celle répondue et l'explication, et le bouton de retour à l'accueil 
+      sont affichés.
+   
+
 // DOCUMENTATION DES FONCTIONS DU JAVASCRIPT
 
 Fonction loadXMLDoc1():
